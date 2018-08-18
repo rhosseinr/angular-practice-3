@@ -1,0 +1,176 @@
+<div *ngIf="imdbDetail">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="{{imdbDetail.Poster}}" style="max-width: 128px;"/>
+            </div>
+            <div class="col-6 title">
+                {{imdbDetail.Title}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Year:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Year}}
+            </div>
+            <div class="col-3 title">
+                Rated:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Rated}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Released:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Released}}
+            </div>
+            <div class="col-3 title">
+                Runtime:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Runtime}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Genre:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Genre}}
+            </div>
+            <div class="col-3 title">
+                Director:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Director}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Writer:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Writer}}
+            </div>
+            <div class="col-3 title">
+                Actors:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Actors}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Plot:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Plot}}
+            </div>
+            <div class="col-3 title">
+                Language:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Language}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Country:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Country}}
+            </div>
+            <div class="col-3 title">
+                Awards:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Awards}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Metascore:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Metascore}}
+            </div>
+            <div class="col-3 title">
+                imdbRating:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.imdbRating}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Rating:
+            </div>
+            <div class="col-9">
+                <ul>
+                    <li *ngFor="let item of imdbDetail.Ratings">
+                        {{item.Source}}: {{item.Value}}
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                imdbVotes:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.imdbVotes}}
+            </div>
+            <div class="col-3 title">
+                imdbID:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.imdbID}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                Type:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Type}}
+            </div>
+            <div class="col-3 title">
+                DVD:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.DVD}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 title">
+                BoxOffice:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.BoxOffice}}
+            </div>
+            <div class="col-3 title">
+                Production:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Production}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 title">
+                <a href="{{imdbDetail.Website}}">Website</a>
+            </div>
+            <div class="col-3 title">
+                Response:
+            </div>
+            <div class="col-3">
+                {{imdbDetail.Response}}
+            </div>
+        </div>
+    </div>
+</div>

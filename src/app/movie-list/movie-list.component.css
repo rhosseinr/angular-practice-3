@@ -1,0 +1,6 @@
+.mat-table {
+    width: 100%;
+}
+.mat-row.ng-star-inserted {
+    cursor: pointer;
+}
